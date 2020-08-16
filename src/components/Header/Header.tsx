@@ -7,8 +7,8 @@ const Header = () => {
   return <header className={css.header}>
     <Container>
       <a className={css.logo} href={process.env.PUBLIC_URL + '/'}><img src={logo} alt='Reichbaum'/></a>
-    <p className={css.title}>Frontender React</p> <Link variant='body2' href='https://github.com/Reichbaum/testjob'>Github</Link>
-
+      <p className={css.title}>Frontender React</p>
+      <Link className={css.link} variant='body2' href='https://github.com/Reichbaum/testjob'>Github</Link>
     </Container>
   </header>
 }
