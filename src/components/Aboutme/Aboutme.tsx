@@ -1,5 +1,5 @@
 import React from 'react'
-import {Divider, List, ListItem, ListItemIcon, ListItemText, Typography} from '@material-ui/core'
+import {Divider, Grid, List, ListItem, ListItemIcon, ListItemText, Typography} from '@material-ui/core'
 import me from '../../assets/img/reich.jpg'
 import NotInterestedIcon from '@material-ui/icons/NotInterested'
 import CheckCircleOutlineIcon from '@material-ui/icons/CheckCircleOutline'
@@ -17,18 +17,22 @@ const Aboutme = () => {
     <Typography variant='h1' component='h1' gutterBottom>
       Привет, меня зовут Юлия
     </Typography>
-    <div className='wrapper'>
-      <img src={me} width={150} className='avatar' alt='Reichbaum Julia'/>
-      <Typography variant="body1" paragraph>
-        Мне 38 лет, я родом из Иркутска, сейчас живу в Анапе. 7 лет занимаюсь фрилансерской веб-разработкой -
-        разрабатываю и поддерживаю сайты, в основном, по рекомендациям моих клиентов - <a
-        href='https://reichbaum.ru/projects' target='_blank' rel='noopener noreferrer'>вот они</a>. Попробовав себя в
-        качества
-        наставника на онлайн-курсах по HTML и CSS, я поняла, что работая в одиночку я не развиваюсь, поэтому
-        приняла решение - изучить актуальные инструменты фронтенда и попробовать себя в командной работе на
-        современном проекте.
-      </Typography>
-    </div>
+    <Grid container>
+      <Grid item xs={12} sm={3}>
+        <img src={me} width={150} className='avatar' alt='Reichbaum Julia'/>
+      </Grid>
+      <Grid item xs={12} sm={9}>
+        <Typography variant="body1" paragraph>
+          Мне 38 лет, я родом из Иркутска, сейчас живу в Анапе. 7 лет занимаюсь фрилансерской веб-разработкой -
+          разрабатываю и поддерживаю сайты, в основном, по рекомендациям моих клиентов - <a
+          href='https://reichbaum.ru/projects' target='_blank' rel='noopener noreferrer'>вот они</a>. Попробовав себя в
+          качества
+          наставника на онлайн-курсах по HTML и CSS, я поняла, что работая в одиночку я не развиваюсь, поэтому
+          приняла решение - изучить актуальные инструменты фронтенда и попробовать себя в командной работе на
+          современном проекте.
+        </Typography>
+      </Grid>
+    </Grid>
     <Typography variant="body1" paragraph>
       Мои скиллы - хорошо знаю HTML, CSS, адаптивную верстку, владею графическими программами. Javacript - на уровне
       реализации не очень сложных практических задач, сейчас изучаю теоретическую часть. PHP - на рабочем уровне, в
