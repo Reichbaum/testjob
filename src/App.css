@@ -1,38 +1,85 @@
-.App {
-  text-align: center;
+:root {
+  --primary: #6b5b95;
+  --secondary: #6dbd1c
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+p {
+  margin-top: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a {
+  color: var(--secondary);
+  text-decoration: none;
 }
 
-.App-header {
+a:focus,
+a:hover {
+  color: var(--primary)
+}
+
+.app {
   background-color: #282c34;
   min-height: 100vh;
+  color: white;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: stretch;
+  overflow-y: hidden;
 }
 
-.App-link {
-  color: #61dafb;
+.content {
+  padding: 15px;
+  flex-grow: 1;
+  height: 500px;
+  overflow: auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.wrapper {
+  display: flex;
 }
+
+.svgIcon svg {
+  fill: var(--secondary)
+}
+
+::-webkit-scrollbar{
+  width:14px;
+}
+
+::-webkit-scrollbar-thumb{
+  border-width:1px 1px 1px 2px;
+  border-color: #777;
+  background-color: #6b5b95;
+}
+
+::-webkit-scrollbar-thumb:hover{
+  border-width: 1px 1px 1px 2px;
+  border-color: rgb(12, 12, 12);
+  background-color: #6b5b95;
+}
+
+::-webkit-scrollbar-track{
+  border-width:0;
+  background-color: #252830;
+}
+
+::-webkit-scrollbar-track:hover{
+  border-left: solid 1px rgb(26, 26, 26);
+  background-color: #252830;
+}
+
+.avatar {
+  flex-shrink: 0;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  object-position: top;
+  margin-right: 15px;
+}
+
+.gutterBottom.MuiDivider-root {
+  margin-bottom: 20px;
+}
+
+
+

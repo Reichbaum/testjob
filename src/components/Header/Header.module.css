@@ -1,0 +1,30 @@
+.header {
+    padding: 10px 15px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+.header > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    align-self: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    margin-bottom: 0;
+
+}
+
+.subtitle {
+    font-size: calc(10px + 1vmin);
+    margin-top: 5px;
+    margin-left: 15px;
+    color: #dddddd;
+}
+
+.logo {
+    width: 250px;
+}

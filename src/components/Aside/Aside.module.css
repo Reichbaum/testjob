@@ -1,0 +1,6 @@
+.aside {
+    width: 250px;
+    margin-right: 20px;
+    flex-shrink: 0;
+    padding-top: 15px;
+}

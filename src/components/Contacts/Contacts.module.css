@@ -1,0 +1,12 @@
+.contactsList a {
+    color: #cdcdcd;
+    font-weight: 200;
+    text-transform: uppercase;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.contactsList a:focus,
+.contactsList a:hover {
+    color: var(--primary)
+}

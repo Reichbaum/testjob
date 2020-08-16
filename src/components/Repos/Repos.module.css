@@ -1,0 +1,67 @@
+.singleRepo {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #2e343c;
+    width: 100%;
+}
+
+.features {
+    display: flex;
+}
+
+.link {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.iconWrapper {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+    border-radius: 4px;
+    border: 1px solid #6b5b95;
+    font-size: 12px;
+    padding-left: 5px;
+}
+
+.iconWrapper span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 4px 4px 0;
+    border-left: 1px solid #6b5b95;
+    background-color: #dddddd;
+    min-width: 30px;
+    height: 100%;
+    margin-left: 7px;
+    color: black;
+}
+
+.iconWrapper svg {
+    margin-right: 3px;
+}
+
+.repoForm {
+    margin-bottom: 20px;
+}
+
+.repoContainer {
+    display: flex;
+    margin-bottom: 20px;
+    width: 80%;
+}
+
+.repoContainer .inputText {
+    flex-grow: 1;
+    width: 75%;
+    margin-right: 15px;
+}
+
+.repoContainer .inputNumber {
+    width: 25%;
+}
+
+.repoForm button[type='submit'] {
+    margin-bottom: 20px;
+}
