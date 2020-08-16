@@ -10,8 +10,9 @@ const rootReducer = combineReducers({
 
 const sagaMiddleware = createSagaMiddleware()
 // @ts-ignore
-const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
-const store = createStore(rootReducer, composeEnhancers(applyMiddleware(sagaMiddleware)))
+// const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+// const store = createStore(rootReducer, composeEnhancers(applyMiddleware(sagaMiddleware)))
+const store = createStore(rootReducer, applyMiddleware(sagaMiddleware))
 
 sagaMiddleware.run(rootReposSaga)
 
