@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/testjob/static/css/main.ddd990ae.chunk.css",
+    "main.css": "/testjob/static/css/main.8e5574c6.chunk.css",
     "main.js": "/testjob/static/js/main.da78da22.chunk.js",
     "main.js.map": "/testjob/static/js/main.da78da22.chunk.js.map",
     "runtime-main.js": "/testjob/static/js/runtime-main.65693edc.js",
@@ -9,10 +9,10 @@
     "static/js/2.e0d984a4.chunk.js": "/testjob/static/js/2.e0d984a4.chunk.js",
     "static/js/2.e0d984a4.chunk.js.map": "/testjob/static/js/2.e0d984a4.chunk.js.map",
     "index.html": "/testjob/index.html",
-    "precache-manifest.db6c2631d1a01da5d9ecf2f9e3f1d8f7.js": "/testjob/precache-manifest.db6c2631d1a01da5d9ecf2f9e3f1d8f7.js",
+    "precache-manifest.f2dbac968429fa60bd03096f5aaf27a3.js": "/testjob/precache-manifest.f2dbac968429fa60bd03096f5aaf27a3.js",
     "service-worker.js": "/testjob/service-worker.js",
     "static/css/2.0b31c836.chunk.css.map": "/testjob/static/css/2.0b31c836.chunk.css.map",
-    "static/css/main.ddd990ae.chunk.css.map": "/testjob/static/css/main.ddd990ae.chunk.css.map",
+    "static/css/main.8e5574c6.chunk.css.map": "/testjob/static/css/main.8e5574c6.chunk.css.map",
     "static/js/2.e0d984a4.chunk.js.LICENSE.txt": "/testjob/static/js/2.e0d984a4.chunk.js.LICENSE.txt",
     "static/media/reich.jpg": "/testjob/static/media/reich.2167a108.jpg",
     "static/media/reichbaum-logo.svg": "/testjob/static/media/reichbaum-logo.e3bf0b87.svg",
@@ -22,7 +22,7 @@
     "static/js/runtime-main.65693edc.js",
     "static/css/2.0b31c836.chunk.css",
     "static/js/2.e0d984a4.chunk.js",
-    "static/css/main.ddd990ae.chunk.css",
+    "static/css/main.8e5574c6.chunk.css",
     "static/js/main.da78da22.chunk.js"
   ]
 }
