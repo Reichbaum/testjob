@@ -86,5 +86,14 @@ a:hover {
   margin-bottom: 20px;
 }
 
+@media (max-width: 576px) {
+  .app {
+    overflow-y: auto;
+  }
+  .content {
+    height: auto;
+  }
+}
+
 
 
