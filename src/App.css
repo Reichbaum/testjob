@@ -1,3 +1,7 @@
+html, body {
+  font-family: 'Roboto', "Helvetica", "Arial", sans-serif;
+}
+
 :root {
   --primary: #6b5b95;
   --secondary: #6dbd1c

@@ -12,6 +12,7 @@ import theme from './assets/theme/theme'
 import Aboutme from './components/Aboutme/Aboutme'
 import Contacts from './components/Contacts/Contacts'
 import Frontpage from './components/Frontpage/Frontpage'
+import 'typeface-roboto'
 
 function AppContainer() {
   return (
