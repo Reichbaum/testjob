@@ -44,7 +44,7 @@ function AppContainer() {
 
 const App = () => {
   return <React.StrictMode>
-    <HashRouter basename={process.env.PUBLIC_URL}>
+    <HashRouter>
     <Provider store={store}>
       <ThemeProvider theme={theme}>
       <AppContainer/>

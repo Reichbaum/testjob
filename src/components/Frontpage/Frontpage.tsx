@@ -2,6 +2,7 @@ import React, {FC} from 'react'
 import {Button, List, ListItem, ListItemIcon, ListItemText, Typography} from '@material-ui/core'
 import CheckCircleOutlineIcon from '@material-ui/icons/CheckCircleOutline'
 import css from './Frontpage.module.css'
+import {NavLink} from 'react-router-dom'
 
 const Frontpage = () => {
   return <div>
@@ -11,20 +12,14 @@ const Frontpage = () => {
       репозиториев.<br/>
       В список выводимой информации должны быть включены:
     </Typography>
-
     <List className={css.list}>
       <ListItemTask text='Название'/>
       <ListItemTask text='URL репозитория (можно совместить с выводом имени)'/>
       <ListItemTask text='Количество форков, количество watchers'/>
       <ListItemTask text='Количество звезд у репозитория (stargazers)'/>
     </List>
-    <Button variant="contained" color="primary" href="/test">
-      Решение
-    </Button>
-
-
+    <NavLink to='/test'><Button variant="contained" color="primary">Перейти к заданию</Button></NavLink>
   </div>
-
 }
 
 type ListItemTaskType = {
