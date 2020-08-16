@@ -1,5 +1,5 @@
 import React from 'react'
-import {BrowserRouter, Route, Switch} from 'react-router-dom'
+import {HashRouter, Route, Switch} from 'react-router-dom'
 import './App.css'
 import {ReposList} from './components/Repos/ReposList'
 import {Provider} from 'react-redux'
@@ -36,13 +36,13 @@ function AppContainer() {
 
 const App = () => {
   return <React.StrictMode>
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <HashRouter>
     <Provider store={store}>
       <ThemeProvider theme={theme}>
       <AppContainer/>
       </ThemeProvider>
     </Provider>
-    </BrowserRouter>
+    </HashRouter>
   </React.StrictMode>
 }
 
