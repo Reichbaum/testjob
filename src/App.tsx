@@ -7,7 +7,7 @@ import store from './redux/store'
 import {Container, Grid} from '@material-ui/core'
 import Header from './components/Header/Header'
 import Aside from './components/Aside/Aside'
-import Frontpage from './components/Frontpage/Frontpage'
+import Frontpage from './components/Frontpage'
 import {ThemeProvider} from '@material-ui/styles'
 import theme from './assets/theme/theme'
 import Aboutme from './components/Aboutme/Aboutme'
@@ -28,7 +28,7 @@ function AppContainer() {
               <Grid item xs={12} sm={9}>
                 <div className='content'>
                   <Switch>
-                    <Route exact path='/' render={() => <Frontpage />}/>
+                    <Route exact path={process.env.PUBLIC_URL + '/'} render={() => <Frontpage />}/>
                     <Route path='/test' render={() => <ReposList />}/>
                     <Route path='/contacts' render={() => <Contacts />}/>
                     <Route path='/aboutme' render={() => <Aboutme />}/>
@@ -44,7 +44,7 @@ function AppContainer() {
 
 const App = () => {
   return <React.StrictMode>
-    <HashRouter>
+    <HashRouter basename={process.env.PUBLIC_URL}>
     <Provider store={store}>
       <ThemeProvider theme={theme}>
       <AppContainer/>
