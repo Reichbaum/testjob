@@ -28,10 +28,10 @@ function AppContainer() {
               <Grid item xs={12} sm={9}>
                 <div className='content'>
                   <Switch>
-                    <Route exact path={process.env.PUBLIC_URL + '/'} render={() => <Frontpage />}/>
                     <Route path='/test' render={() => <ReposList />}/>
                     <Route path='/contacts' render={() => <Contacts />}/>
                     <Route path='/aboutme' render={() => <Aboutme />}/>
+                    <Route exact path='/' render={() => <Frontpage />}/>
                   </Switch>
                 </div>
               </Grid>

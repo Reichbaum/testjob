@@ -24,8 +24,12 @@
 }
 
 @media (max-width: 576px) {
+    .header {
+        padding: 10px;
+    }
     .logo {
-        width: 200px;
+        width: 150px;
+        margin-right: 5px;
     }
     .title {
         font-size: 14px;
