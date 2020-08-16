@@ -1,11 +1,11 @@
 import React, {FC} from 'react'
-import {Button, Link, List, ListItem, ListItemIcon, ListItemText, Typography} from '@material-ui/core'
+import {Button, List, ListItem, ListItemIcon, ListItemText, Typography} from '@material-ui/core'
 import CheckCircleOutlineIcon from '@material-ui/icons/CheckCircleOutline'
 import css from './Frontpage.module.css'
 
 const Frontpage = () => {
   return <div>
-    <Typography variant="body1" gutterBottom>
+   <Typography variant="body1" gutterBottom>
      Задача: Разработать SPA для отображения списка репозиториев и информации по какой-либо компании
       на Github. Предусмотреть поле ввода названия компании, лоадер загрузки при запросе, отображение списка
       репозиториев.<br/>
@@ -21,7 +21,7 @@ const Frontpage = () => {
     <Button variant="contained" color="primary" href="/test">
       Решение
     </Button>
-    <Link variant='body2' href='https://github.com/Reichbaum/testjob'>Github</Link>
+
 
   </div>
 
