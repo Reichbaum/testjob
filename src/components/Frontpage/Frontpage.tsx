@@ -1,7 +1,6 @@
 import React, {FC} from 'react'
-import {List, ListItem, ListItemIcon, ListItemText, Typography} from '@material-ui/core'
+import {Button, Link, List, ListItem, ListItemIcon, ListItemText, Typography} from '@material-ui/core'
 import CheckCircleOutlineIcon from '@material-ui/icons/CheckCircleOutline'
-import {Button} from '@material-ui/core'
 import css from './Frontpage.module.css'
 
 const Frontpage = () => {
@@ -22,6 +21,8 @@ const Frontpage = () => {
     <Button variant="contained" color="primary" href="/test">
       Решение
     </Button>
+    <Link variant='body2' href='https://github.com/Reichbaum/testjob'>Github</Link>
+
   </div>
 
 }

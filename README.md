@@ -1,68 +1,31 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Тестовое задание для Zigmund.online
 
-In the project directory, you can run:
+SPA для отображения списка репозиториев и информации по организации на Github - [https://reichbaum.github.io/testjob](https://reichbaum.github.io/testjob). Я 7 лет работаю "разнорабочим" фрилансером в вебе, и это мой первый опыт в тестовых задачах на React, не считая учебных проектов, поэтому я прошу вас посмотреть на мое решение и, по возможности, дать мне обратную связь.
 
-### `npm start`
+### `Основное задание`
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+В задаче используются библиотеки:
+* `react`
+* `redux`
+* `axios`
+* `react-router-dom`
+* `redux-saga`
+* `typescript`
+* `formik`
+* `material ui`
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+ Страница "Тестовое задание" SPA имеет поле ввода названия компании, лоадер загрузки при запросе, отображение списка репозиториев, пагинацию результатов. Cозданы страницы "About me" и "Contacts" с использованием роутинга. 
+ 
+В список выводимой информации включены:
+— Название репозитория
+— URL репозитория
+— Количество форков, количество watchers
+— Количество звезд у репозитория.
 
-### `npm test`
+Реализована адаптивность с помощью сетки Material ui и медиа-выражений. Использованы CSS модули, но без особо продуманной структуры и без фанатизма к деталям, исключительно для символически аккуратного внешнего вида задачи.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### `Пагинация`
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Реализована, на мой взгляд, не очень красиво - в ответе сервера нет явного ответа о количестве всех репозиториев, чтобы посчитать количество страниц. Я вытаскиваю их из ответа headers.link по подстроке 'last', которая, однако, отсутствует при запросе по последней странице - в таком случае используется количество страниц, оставшееся в state с предыдущего запроса. Не уверена, что это правильное решение, но - работает... Также мне не нравится перезагрузка самой пагинации при запросе, но не стала в это углубляться.
