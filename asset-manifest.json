@@ -1,24 +1,28 @@
 {
   "files": {
-    "main.css": "/testjob/static/css/main.7456fc63.chunk.css",
-    "main.js": "/testjob/static/js/main.91a45e94.chunk.js",
-    "main.js.map": "/testjob/static/js/main.91a45e94.chunk.js.map",
+    "main.css": "/testjob/static/css/main.7fe4b797.chunk.css",
+    "main.js": "/testjob/static/js/main.0ded1b8f.chunk.js",
+    "main.js.map": "/testjob/static/js/main.0ded1b8f.chunk.js.map",
     "runtime-main.js": "/testjob/static/js/runtime-main.65693edc.js",
     "runtime-main.js.map": "/testjob/static/js/runtime-main.65693edc.js.map",
-    "static/js/2.6ecb76e1.chunk.js": "/testjob/static/js/2.6ecb76e1.chunk.js",
-    "static/js/2.6ecb76e1.chunk.js.map": "/testjob/static/js/2.6ecb76e1.chunk.js.map",
+    "static/css/2.0b31c836.chunk.css": "/testjob/static/css/2.0b31c836.chunk.css",
+    "static/js/2.02570dc8.chunk.js": "/testjob/static/js/2.02570dc8.chunk.js",
+    "static/js/2.02570dc8.chunk.js.map": "/testjob/static/js/2.02570dc8.chunk.js.map",
     "index.html": "/testjob/index.html",
-    "precache-manifest.0d6ede669006a19bd826ab6589a16f8a.js": "/testjob/precache-manifest.0d6ede669006a19bd826ab6589a16f8a.js",
+    "precache-manifest.af511b23dfb41881fbd59d818781ef7c.js": "/testjob/precache-manifest.af511b23dfb41881fbd59d818781ef7c.js",
     "service-worker.js": "/testjob/service-worker.js",
-    "static/css/main.7456fc63.chunk.css.map": "/testjob/static/css/main.7456fc63.chunk.css.map",
-    "static/js/2.6ecb76e1.chunk.js.LICENSE.txt": "/testjob/static/js/2.6ecb76e1.chunk.js.LICENSE.txt",
+    "static/css/2.0b31c836.chunk.css.map": "/testjob/static/css/2.0b31c836.chunk.css.map",
+    "static/css/main.7fe4b797.chunk.css.map": "/testjob/static/css/main.7fe4b797.chunk.css.map",
+    "static/js/2.02570dc8.chunk.js.LICENSE.txt": "/testjob/static/js/2.02570dc8.chunk.js.LICENSE.txt",
     "static/media/reich.jpg": "/testjob/static/media/reich.2167a108.jpg",
-    "static/media/reichbaum-logo.svg": "/testjob/static/media/reichbaum-logo.e3bf0b87.svg"
+    "static/media/reichbaum-logo.svg": "/testjob/static/media/reichbaum-logo.e3bf0b87.svg",
+    "static/media/index.css": "/testjob/static/media/roboto-latin-900italic.ebf6d164.woff2"
   },
   "entrypoints": [
     "static/js/runtime-main.65693edc.js",
-    "static/js/2.6ecb76e1.chunk.js",
-    "static/css/main.7456fc63.chunk.css",
-    "static/js/main.91a45e94.chunk.js"
+    "static/css/2.0b31c836.chunk.css",
+    "static/js/2.02570dc8.chunk.js",
+    "static/css/main.7fe4b797.chunk.css",
+    "static/js/main.0ded1b8f.chunk.js"
   ]
 }
