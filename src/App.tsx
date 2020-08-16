@@ -7,11 +7,11 @@ import store from './redux/store'
 import {Container, Grid} from '@material-ui/core'
 import Header from './components/Header/Header'
 import Aside from './components/Aside/Aside'
-import Frontpage from './components/Frontpage'
 import {ThemeProvider} from '@material-ui/styles'
 import theme from './assets/theme/theme'
 import Aboutme from './components/Aboutme/Aboutme'
 import Contacts from './components/Contacts/Contacts'
+import Frontpage from './components/Frontpage/Frontpage'
 
 function AppContainer() {
   return (
@@ -44,7 +44,7 @@ function AppContainer() {
 
 const App = () => {
   return <React.StrictMode>
-    <HashRouter basename={process.env.PUBLIC_URL}>
+    <HashRouter>
     <Provider store={store}>
       <ThemeProvider theme={theme}>
       <AppContainer/>
