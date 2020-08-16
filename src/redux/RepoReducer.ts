@@ -180,7 +180,7 @@ export function* workerReposSaga(payload: workerReposSagaType) {
     const repos = yield ReposApi.getRepos(org, per_page, payload.page)
     if (repos.headers.link) {
       if (repos.headers.link.includes('last')) {
-        let link_array = repos.headers.link.match(new RegExp('next' + '(.*)' + 'last'))
+        let link_array = repos.headers.link.match(new RegExp('next(.*)last'))
         number_of_pages = link_array[1].match(/&page=(\d+).*$/)[1]
       }
     }

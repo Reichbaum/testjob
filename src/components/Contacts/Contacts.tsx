@@ -1,11 +1,11 @@
-import React, {FC} from "react";
+import React from 'react'
 import css from './Contacts.module.css'
-import {Link, List, ListItem, ListItemIcon, ListItemText, Typography} from '@material-ui/core'
-import FacebookIcon from '@material-ui/icons/Facebook';
-import InstagramIcon from '@material-ui/icons/Instagram';
-import TelegramIcon from '@material-ui/icons/Telegram';
-import WhatsAppIcon from '@material-ui/icons/WhatsApp';
-import AppsIcon from '@material-ui/icons/Apps';
+import {List, ListItem, ListItemIcon, ListItemText, Typography} from '@material-ui/core'
+import FacebookIcon from '@material-ui/icons/Facebook'
+import InstagramIcon from '@material-ui/icons/Instagram'
+import TelegramIcon from '@material-ui/icons/Telegram'
+import WhatsAppIcon from '@material-ui/icons/WhatsApp'
+import AppsIcon from '@material-ui/icons/Apps'
 
 const ListItemLink = (props: any) => {
   return <ListItem component="a" {...props} />;

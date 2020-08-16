@@ -14,15 +14,16 @@ import {
 
 const Aboutme = () => {
   return <div>
-    <Typography variant="h1" component="h1" gutterBottom>
+    <Typography variant='h1' component='h1' gutterBottom>
       Привет, меня зовут Юлия
     </Typography>
     <div className='wrapper'>
-      <img src={me} width={150} className='avatar'/>
+      <img src={me} width={150} className='avatar' alt='Reichbaum Julia'/>
       <Typography variant="body1" paragraph>
         Мне 38 лет, я родом из Иркутска, сейчас живу в Анапе. 7 лет занимаюсь фрилансерской веб-разработкой -
         разрабатываю и поддерживаю сайты, в основном, по рекомендациям моих клиентов - <a
-        href='https://reichbaum.ru/projects' target='_blank' rel="noopener">вот они</a>. Попробовав себя в качества
+        href='https://reichbaum.ru/projects' target='_blank' rel='noopener noreferrer'>вот они</a>. Попробовав себя в
+        качества
         наставника на онлайн-курсах по HTML и CSS, я поняла, что работая в одиночку я не развиваюсь, поэтому
         приняла решение - изучить актуальные инструменты фронтенда и попробовать себя в командной работе на
         современном проекте.
@@ -31,7 +32,8 @@ const Aboutme = () => {
     <Typography variant="body1" paragraph>
       Мои скиллы - хорошо знаю HTML, CSS, адаптивную верстку, владею графическими программами. Javacript - на уровне
       реализации не очень сложных практических задач, сейчас изучаю теоретическую часть. PHP - на рабочем уровне, в
-      силу плотной работы с Вордпрессом. Разобралась с препроцессорами (Less/Sass), научилась Git, поняла суть Gulp, использую в работе. В теорию углубляюсь по мере надобности, умею гуглить, находить и
+      силу плотной работы с Вордпрессом. Разобралась с препроцессорами (Less/Sass), научилась Git, поняла суть Gulp,
+      использую в работе. В теорию углубляюсь по мере надобности, умею гуглить, находить и
       адаптировать код под собственные нужды. Английский - читаю хорошо, разговорный - на уровне бытового общения.
 
     </Typography>
@@ -70,12 +72,12 @@ const Aboutme = () => {
           primary='ИрГУПС Управление персоналом (зачислили вместо отмененной специальности ИТ. Решила, что не судьба, осталась тут.'/>
       </ListItem>
     </List>
-    <Typography variant="body2"  paragraph>
+    <Typography variant="body2" paragraph>
       В общем, по теоретической части классического программирования я обладаю не самыми глубокими знаниями, но имею
       технический склад ума и
       способность разобраться и решить любую взятую на себя задачу, разобрав ее на более мелкие.
     </Typography>
-    <Divider  className='gutterBottom'/>
+    <Divider className='gutterBottom'/>
     <Typography variant="h2" component="h2">
       Работа
     </Typography>
@@ -90,11 +92,12 @@ const Aboutme = () => {
         </TimelineSeparator>
         <TimelineContent>
           <Typography>Контракт на разработку и поддержку сайта <a href='https://www.bahn-erlebnisreise.de/'
-                                                                  target='_blank' rel="noopener">Die
+                                                                  target='_blank' rel="noopener noreferrer">Die
             Eisenbahn Erlebnisreise</a> (Deutchland, Düsseldorf). <br/>
             CMS Wordpress - редизайн, решение всех задач по внедрению нового
             функционала (PHP + Javascript). Интеграция с аггрегатором Journaway.com. <a
-              href='https://reichbaum.ru/projects' target='_blank' rel="noopener">Всякий фриланс.</a></Typography>
+              href='https://reichbaum.ru/projects' target='_blank' rel="noopener noreferrer">Всякий
+              фриланс.</a></Typography>
         </TimelineContent>
       </TimelineItem>
       <TimelineItem>
@@ -107,7 +110,8 @@ const Aboutme = () => {
         </TimelineSeparator>
         <TimelineContent>
           <Typography>Свой небольшой интернет-магазин для семейного бизнеса <a
-            href='https://ultrairk.ru' target='_blank' rel="noopener">Автосигнализации</a> (сейчас не обновляется) -
+            href='https://ultrairk.ru' target='_blank' rel="noopener noreferrer">Автосигнализации</a> (сейчас не
+            обновляется) -
             разработка сайта
             CMS Opencart, наполнение
             контентом, развитие проекта. Фриланс. </Typography>

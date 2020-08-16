@@ -1,5 +1,5 @@
 import React from 'react'
-import {BrowserRouter, Route, Switch, withRouter} from 'react-router-dom'
+import {BrowserRouter, Route, Switch} from 'react-router-dom'
 import './App.css'
 import {ReposList} from './components/Repos/ReposList'
 import {Provider} from 'react-redux'
@@ -12,8 +12,6 @@ import {ThemeProvider} from '@material-ui/styles'
 import theme from './assets/theme/theme'
 import Aboutme from './components/Aboutme/Aboutme'
 import Contacts from './components/Contacts/Contacts'
-
-
 
 function AppContainer() {
   return (
