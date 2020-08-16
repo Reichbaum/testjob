@@ -15,16 +15,19 @@
     font-size: calc(10px + 2vmin);
     color: white;
     margin-bottom: 0;
-
 }
 
-.subtitle {
-    font-size: calc(10px + 1vmin);
-    margin-top: 5px;
-    margin-left: 15px;
-    color: #dddddd;
-}
 
 .logo {
     width: 250px;
+}
+
+@media (max-width: 576px) {
+    .logo {
+        width: 200px;
+    }
+    .title {
+        font-size: 14px;
+    }
+
 }

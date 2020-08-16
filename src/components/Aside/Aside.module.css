@@ -1,6 +1,9 @@
 .aside {
-    width: 250px;
-    margin-right: 20px;
-    flex-shrink: 0;
-    padding-top: 15px;
+    padding: 15px;
+}
+
+@media (max-width: 576px) {
+    .aside {
+        padding: 0 15px;
+    }
 }
